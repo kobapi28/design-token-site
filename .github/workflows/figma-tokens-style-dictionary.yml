@@ -1,4 +1,6 @@
 name: 'figma-tokens style-dictionary actions'
+on:
+  pull_request:
 
 job:
   generate_scss:
