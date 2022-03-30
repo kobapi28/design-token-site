@@ -2,7 +2,7 @@ name: 'figma-tokens style-dictionary actions'
 on:
   pull_request:
 
-job:
+jobs:
   generate_scss:
     name: generate_scss
     runs-on: ubuntu-latest
