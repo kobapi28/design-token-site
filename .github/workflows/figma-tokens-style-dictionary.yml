@@ -22,3 +22,8 @@ jobs:
       
       - name: run style-dictionary
         run: yarn style-dictionary
+
+      - name: add and commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: generate scss by style-dictionary
