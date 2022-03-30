@@ -1,0 +1,22 @@
+name: 'figma-tokens style-dictionary actions'
+
+job:
+  generate_scss:
+    name: generate_scss
+    runs-on: ubuntu-latest
+    # 'figma' という名前を含むブランチのみ動くように設定
+    if: contains(github.head_ref, 'figma')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: yarn add -D style-dictionary
+        run: yarn add -D style-dictionary
+      
+      - name: run style-dictionary
+        run: yarn style-dictionary # package.jsonに登録済みのため
