@@ -21,4 +21,4 @@ jobs:
         run: yarn add -D style-dictionary
       
       - name: run style-dictionary
-        run: yarn style-dictionary # package.jsonに登録済みのため
+        run: style-dictionary build
