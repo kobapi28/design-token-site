@@ -6,7 +6,8 @@
   "author": "Shoma Kobayashi <sho1228.k@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack serve --open"
+    "serve": "webpack serve --open",
+    "style-dictionary": "style-dictionary build"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
